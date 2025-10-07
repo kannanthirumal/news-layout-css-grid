@@ -1,0 +1,105 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 30px;
+}
+
+.brand {
+  font-family: "Lavishly Yours", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  border: 3px solid black;
+  padding: 30px;
+  margin: 0;
+}
+
+.page {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "story-1 story-2 story-3"
+    "story-4 story-5 story-5";
+}
+
+.nav-links {
+  grid-area: nav;
+}
+
+.brand-header {
+  grid-area: header;
+}
+
+.story-1 {
+  grid-area: story-1;
+}
+
+.story-2 {
+  grid-area: story-2;
+}
+
+.story-3 {
+  grid-area: story-3;
+}
+
+.story-4 {
+  grid-area: story-4;
+}
+
+.story-5 {
+  grid-area: story-5;
+}
+
+.section-link {
+  font-family: "Alfa Slab One", serif;
+  font-style: normal;
+  color: #666;
+  font-size: 20px;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+}
+
+.section-link:hover {
+  text-decoration: underline;
+}
+
+.article-title {
+  font-size: 25px;
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.article-img {
+  display: block;
+  max-height: 250px;
+  margin: 0 auto;
+}
+
+.story {
+  padding: 10px;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.story-3,
+.story-5 {
+  border-right: 3px solid black;
+}
